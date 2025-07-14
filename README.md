@@ -11,3 +11,4 @@
 ## look for a backuped file:
 
 grep <searchstring> "$BACKUP_DIR/index/*.txt
+
