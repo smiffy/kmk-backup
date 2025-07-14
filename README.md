@@ -10,5 +10,5 @@
 
 ## look for a backuped file:
 
-grep <searchstring> "$BACKUP_DIR/index/*.txt
+grep &lt;searchstring&gt; "$BACKUP_DIR/index/*.txt
 
