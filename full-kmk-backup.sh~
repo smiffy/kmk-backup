@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd `dirname "$0"`
+echo "$0 started at `date`" >> ./log/backup.log
+./sync-nextcloud.sh >> ./log/backup.log
+export MODE=full
+./kmk-backup.sh
+

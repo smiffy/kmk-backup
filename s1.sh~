@@ -1,0 +1,6 @@
+#!/bin/bash
+pwd
+cd `dirname "$0"`
+pwd
+echo s1
+./s2.sh

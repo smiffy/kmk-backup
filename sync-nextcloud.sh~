@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "sync directory '$1'"
+nextcloudcmd --non-interactive -n "$1" https://cloud.ionos-kanuclub-maxau.de
+

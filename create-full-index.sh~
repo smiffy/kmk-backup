@@ -1,0 +1,1 @@
+ls incr-20250*.tar.gz | xargs -I@ sh -c "tar ztvf @ > index/@.txt"
