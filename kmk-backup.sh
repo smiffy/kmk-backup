@@ -36,7 +36,7 @@ fi
 echo "diskusage:" >> /tmp/log.txt
 /usr/bin/df | /usr/bin/grep -E '(root|sda1)' >> /tmp/log.txt
 
-export cut_file=$(ls "$BACKUP_DIR"/full-* -t | tail +4| head -n1)
+export cut_file=$(ls "$BACKUP_DIR"/full-* -t | tail +6| head -n1)
 if [ "$cut_file" ] ; then
     echo "old backup files to delete:" >> /tmp/log.txt
     /usr/bin/find "$BACKUP_DIR" ! -newer "$cut_file" -print | tee -a /tmp/log.txt
